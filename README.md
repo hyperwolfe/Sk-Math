@@ -1,7 +1,7 @@
 # Sk-Cuts
 Skript addon for new shortcut syntax with optimizations to run as good or sometimes even better than skript!
 
-Syntax: 
+Syntax for V1.0: 
 
 %number% += %number%
 %number% -= %number%
