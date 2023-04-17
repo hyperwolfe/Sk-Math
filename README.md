@@ -1,27 +1,29 @@
 # Sk-Cuts
-Skript addon for new shortcut syntax with optimizations to run as good or sometimes even better than skript!
+Sk-cuts is a plugin for Minecraft servers that adds new functionality to the Skript plugin. It includes several new syntaxes that can be used to modify variables and compare objects.  
 
-Syntax for v1.1.1: 
+Installation
+To use Sk-cuts, you'll need to have Skript installed on your Minecraft server. You can download Skript from the [offical github](https://github.com/SkriptLang/Skript/releases).  
 
-%number% += %number%  
-%number% -= %number%  
-%number% *= %number%  
-%number% /= %number%  
-%number% ^= %number%  
-%number/boolean/string/player/entity/location/world% == %number/boolean/string/player/entity/location/world%  
+Once Skript is installed, you can download Sk-cuts from the [GitHub repository](https://github.com/matthewbrumpton/Sk-Cuts/releases) and place it in the plugins/Skript/scripts/ folder on your server.  
 
-examples:  
+Syntax
+Sk-cutsincludes the following new syntaxes:  
+
+%number% += %number%: Add a value to a variable.  
+%number% -= %number%: Subtract a value from a variable.  
+%number% *= %number%: Multiply a variable by a value.   
+%number% /= %number%: Divide a variable by a value.  
+%number% ^= %number%: Raise a variable to a power.  
+%object% == %object%: Set an object to another object.  
+Examples  
+Here are some examples of how you can use Sk-cuts syntaxes:  
 <pre>
-on join:  
- {joins::%player's uuid%} += 1  
+set {x} to 5
+{y} += 3 # This adds 3 to the value of {y}
+{z} *= 2 # This multiplies the value of {z} by 2
 
-command setpoints <number>:  
- trigger:  
-  {points::%player's uuid%} == arg-1  
-  
-on death:  
- {protection::%player's uuid%} == true  
-   
-on right click:  
- {clicksleft::%player's uuid%} -= 1  
-</pre>  
+{list1} == {1, 2, 3}
+{list2} == {4, 5, 6}
+
+{list2} == {list1} # This sets list2 to be equal to list1
+</pre>
