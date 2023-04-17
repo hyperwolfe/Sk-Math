@@ -7,7 +7,7 @@ To use Sk-cuts, you'll need to have Skript installed on your Minecraft server. Y
 Once Skript is installed, you can download Sk-cuts from the [GitHub repository](https://github.com/matthewbrumpton/Sk-Cuts/releases) and place it in the plugins/Skript/scripts/ folder on your server.  
 
 Syntax
-Sk-cutsincludes the following new syntaxes:  
+Sk-cuts includes the following new syntaxes:  
 
 %number% += %number%: Add a value to a variable.  
 %number% -= %number%: Subtract a value from a variable.  
