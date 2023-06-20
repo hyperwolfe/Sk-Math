@@ -1,0 +1,8 @@
+name: skript-cuts
+version: '${project.version}'
+author: Holligy
+description: A skript addon for math
+main: org.skriptsound.skriptaddon.Skript_addon
+api-version: 1.19
+
+depend: [Skript]
