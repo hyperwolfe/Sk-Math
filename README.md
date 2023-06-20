@@ -26,4 +26,6 @@ set {x} to 5
 {list2} == {4, 5, 6}
 
 {list2} == {list1} # This sets list2 to be equal to list1
+
+{myfactorial} == 10! # this sets {myfactorial}  to 10 factorial
 </pre>
